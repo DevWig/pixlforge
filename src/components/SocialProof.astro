@@ -1,0 +1,66 @@
+---
+---
+
+<section class='social-proof-section'>
+  <p id='social-proof-tagline'>Subscribe and join great company!</p>
+  <div class='logo-img-grid'>
+    <div>
+      <img src='/GoodVibes.png' class='social-proof-logo' alt='' />
+    </div>
+    <div>
+      <img src='/TechRex_pfp_black.png' class='social-proof-logo' alt='' />
+    </div>
+    <div>
+      <img src='/MORE.png' class='social-proof-logo' alt='' />
+    </div>
+    <div>
+      <img src='/SPC-logo.png' class='social-proof-logo' alt='' />
+    </div>
+    <div>
+      <img
+        src='/public/TinWigMedia_logo_black.png'
+        class='social-proof-logo'
+        alt=''
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .social-proof-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px 100px 25px;
+    & > #social-proof-tagline {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+  }
+  .logo-img-grid {
+    display: grid;
+    min-width: 50%;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(100% / 5 - 1rem), 1fr)
+    );
+    grid-gap: 10px;
+    padding: 0;
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      & > img {
+        display: block;
+        max-width: 100%;
+        width: 100px;
+        height: 40px;
+        object-fit: contain;
+      }
+    }
+  }
+</style>

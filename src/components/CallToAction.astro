@@ -1,0 +1,26 @@
+---
+interface Props {
+  text: string;
+  href: string;
+  styleName: string;
+}
+
+const { text, href, styleName } = Astro.props;
+---
+
+<a href={href} class={styleName}>
+  {text}
+</a>
+<style>
+  .primary-cta {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: rgb(var(--accent));
+  }
+  .secondary-cta {
+    color: #000;
+    text-decoration: underline;
+  }
+</style>

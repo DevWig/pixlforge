@@ -1,0 +1,42 @@
+---
+import CallToAction from './CallToAction.astro';
+---
+
+<nav>
+  <div class='navlink-logo'>
+    <img src='/public/PixlForge_Logo.svg' alt='PixlForge Logo' />
+  </div>
+  <div>
+    <a href='/' class='navlink'>Why</a>
+    <a href='/#what' class='navlink'>What</a>
+    <a href='/#how' class='navlink'>How</a>
+    <CallToAction text='Get Started' href='/#pricing' styleName='primary-cta' />
+  </div>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: var(--background);
+    color: #fff;
+    position: static;
+    & > div {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    & > .navlink-logo {
+      max-height: 150px;
+      max-width: 150px;
+      justify-content: center;
+    }
+  }
+  .navlink {
+    color: #fff;
+    text-decoration: none;
+  }
+</style>
